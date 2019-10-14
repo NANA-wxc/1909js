@@ -1,0 +1,153 @@
+﻿function get_new_time(pst)
+	{
+		if(typeof(Storage) !== "undefined")
+			{
+				 if (sessionStorage.getItem("u_items") && sessionStorage.getItem("u_items") == pst)
+				 {
+					 
+					 each_item(JSON.parse(sessionStorage.getItem("u_items")));
+					 //console.log("first" + sessionStorage.getItem("u_items"));
+					 //console.log("parse" + JSON.parse(sessionStorage.getItem("u_items")));
+				 }
+				else
+				{
+					$.getJSON(pst,function(u_items)
+
+					{
+						//console.log("get" + u_items);
+						sessionStorage.setItem("u_items",JSON.stringify(u_items));
+						sessionStorage.setItem("j_file", pst);
+						//console.log("sessionStorage" + sessionStorage.getItem("u_items"));
+						//console.log("set" + JSON.parse(sessionStorage.getItem("u_items")));
+						each_item(JSON.parse(sessionStorage.getItem("u_items")));
+					});
+					
+
+				}
+				
+			}
+		else
+			{
+				$.getJSON(pst,function(u_items){
+					
+					each_item(u_items);
+					
+				});
+				
+			}
+		
+		
+			
+		
+	}
+		
+		function each_item(obj_items)
+		{
+			$.each(obj_items,function(i,u_item){
+
+				let u_store="bs";
+				let s_class=["new_pro","timelimit","size","sale","l3_time"],
+					s_item=["women","men","kids","baby"];
+				let s_href = window.location.origin+window.location.pathname;
+
+				for(let m=0; m<s_class.length-1;m++)
+					{
+                            if(u_item[s_class[m]] != undefined)
+                            {
+						      for(let n=0; n<s_item.length;n++)
+							     {
+								//console.log(u_item[s_class[m]][u_store][s_item[n]]);
+								//console.log($('.' + s_class[m] + '_' +s_item[n]));
+                                //console.log(u_item[s_class[m]][u_store][s_item[n]]=="" || u_item[s_class[m]][u_store][s_item[n]]=== undefined);
+                                if(u_item[s_class[m]][u_store][s_item[n]]=="" || u_item[s_class[m]][u_store][s_item[n]]=== undefined)
+                                    {
+                                        
+                                        $('.' + s_class[m] + '_' +s_item[n] +', .' + s_class[m] + '_' +s_item[n]+ '_ut').remove();
+                                    }
+                                if(s_href == u_item[s_class[m]][u_store][s_item[n]])
+                                {
+                                    $('.' + s_class[m] + '_' +s_item[n]).addClass("on");
+                                }
+                                
+                                $('.' + s_class[m] + '_' +s_item[n]).unbind("click");
+								$('.' + s_class[m] + '_' +s_item[n]).bind("click",function(){
+									//console.log($(this));
+									window.open(u_item[s_class[m]][u_store][s_item[n]],"_blank");
+								});
+
+                                
+								$('.' + s_class[m] + '_' +s_item[n]+ '_ut' ).unbind("click");
+								$('.' + s_class[m] + '_' +s_item[n]+ '_ut' ).bind("click",function(){
+								switch(u_store)
+								{
+									case "tm":
+										window.open(u_item[s_class[m]][u_store][s_item[n]] + "?keyword=ut","_blank");
+										break;
+									default:
+										window.open(u_item[s_class[m]][u_store][s_item[n]] + "?searchText=ut","_blank");
+								}
+								});
+							}
+                            }
+					}
+				
+				let jtl_id="";
+				if(document.getElementsByClassName("l3_time")[0])
+					{
+						if($(".l3_time").attr('id'))
+							{
+								jtl_id= $(".l3_time").attr('id');
+
+								set_l3time(u_item,u_store,s_class,jtl_id);
+								
+							}
+						else
+						{
+							jtl_id= $(".l3_time").attr('class').replace(/\s+l3_time|\s+$/gm,"");
+							set_l3time(u_item,u_store,s_class,jtl_id);
+						}
+					}
+				
+				
+				
+
+
+				
+			});
+		}
+		
+		
+		function set_l3time(u_item,u_store,s_class,jtl_id)
+		{
+			
+				if(jtl_id && u_item["l3_time"][jtl_id][u_store + "_link"] != "")
+					{
+
+								//console.log(u_item["l3_time"][jtl_id][u_store + "_link"]);
+						
+						//$('#' + jtl_id + " img,"+'.' + jtl_id + " img").remove();
+						$('#' + jtl_id + ',.' + jtl_id).html("");
+						
+						$('#' + jtl_id + ',.' + jtl_id).append("<img src='" + u_item["l3_time"][jtl_id][u_store + "_banner"] + "'>");
+						
+						$('#' + jtl_id + ',.' + jtl_id).unbind("click");
+						$('#' + jtl_id + ',.' + jtl_id).click(function(){
+
+							window.open(u_item["l3_time"][jtl_id][u_store + "_link"],"_blank");
+
+						});
+						
+/*						$('.' + jtl_id).click(function(){
+
+							window.open(u_item["l3_time"][jtl_id][u_store + "_link"],"_blank");
+
+						});*/
+					}
+				else
+					{
+						$('#' + jtl_id + ',.' + jtl_id).html("");
+						
+					}
+		}
+	
+

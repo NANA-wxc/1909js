@@ -1,0 +1,28 @@
+/**
+ * Created by jack on 14-8-7.
+ */
+baseurl='https://vfr.uniqlo.cn/u2/';
+var timer;
+jsonpHomeUrl = 'https://vfr.uniqlo.cn/u2/index.php/Indexnew';
+tmplPath = 'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/';
+var list = [
+
+    'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsgw/citys.js',
+    'https://vfr.uniqlo.cn/u2/index.php/Iplookup/IpArea/format/js',
+    'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsgw/nio-weather-new.js?19',
+    'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsgw/home.js?14',
+    'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsmao/CoverScroll/jquery.coverscroll.js',
+    'https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsgw/main.js?39'
+]
+
+var arr = [];
+arr.push('<link href="https://vfr.uniqlo.cn/u2/Home/Tpl/Public/css/dressing_room950.css?34" rel="stylesheet" type="text/css" />')
+arr.push('<script  type="text/javascript" src="https://vfr.uniqlo.cn/u2/Home/Tpl/Public/jsgw/jquery.js"></script>')
+arr.push('<script  type="text/javascript">$BIGO = $.noConflict(true);</script>')
+for(var i = 0, ln = list.length; i < ln; i++){
+    arr.push('<script  src="'+ list[i] + '">' );
+    arr.push('</script>');
+}
+if(arr.length > 0){
+    document.write(arr.join('') );
+}

@@ -1,0 +1,593 @@
+area {
+    outline-style: none;
+  }
+  body{
+    overflow-x:hidden;
+    font:12px "UniqloProRegular", "fzlt_pro"!important;
+  }
+  img{
+    vertical-align:baseline!important;
+  }
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+      .share-overlay{
+          z-index:2001!important;
+      }
+      div.company-about ul li img{
+          width:190px;
+          height:190px;
+      }
+  /*u-nav-wrapper*/
+  
+  #u-nav-wrapper {
+    position: relative;
+    width: 1280px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top:5px;
+  }
+  
+  .nav-mask-cover {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1999;
+  }
+  
+  
+  /*nav*/
+  
+  #u-main-nav {
+    position: relative;
+    z-index: 2000;
+  }
+  
+  #u-nav-wrapper .left-nav {
+    float: left;
+    width: 595px;
+    background: #fff;
+  }
+  
+  .left-nav li,
+  .right-nav li {
+    float: left;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .left-nav a,
+  .right-nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .left-nav a:hover,
+  .right-nav a:hover{
+  color:red!important;
+  }
+  .left-nav a {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .right-nav a {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  #u-nav-wrapper .right-nav {
+    float: right;
+    background: #a1a1a1;
+    width: 685px;
+  }
+  
+  .right-nav li {
+    float: left;
+  }
+  
+  
+  /*left-nav*/
+  
+  .left-nav .nav-logo {
+    height: 50px;
+  }
+  
+  .left-nav .nav-women {
+    width: 116px;
+  }
+  
+  .left-nav .nav-men {
+    width: 97px;
+  }
+  
+  .left-nav .nav-kids {
+    width: 96px;
+  }
+  
+  .left-nav .nav-baby {
+    width: 140px;
+  }
+  
+  
+  
+  .left-nav .nav-women a:after,
+  .left-nav .nav-men a:after,
+  .left-nav .nav-kids a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 0px;
+    height: 20px;
+    border-left: 1px dotted #000;
+  }
+  
+  .left-nav .nav-women a:hover,
+  .left-nav .nav-men a:hover,
+  .left-nav .nav-kids a:hover,
+  .left-nav .nav-baby a:hover {
+    color: #fe0000;
+  }
+  
+  
+  /*right-nav*/
+  
+  .right-nav .nav-enterprise,
+  .right-nav .nav-about,
+  .right-nav .nav-shoplist {
+    width: 99px;
+  }
+  
+  .right-nav .nav-guide,
+  .right-nav .nav-ele-paper {
+    width: 129px;
+  }
+  
+  .right-nav .nav-announcement {
+    width: 130px;
+  }
+  
+  .right-nav .nav-shoplist {
+    background: #666666;
+  }
+  
+  .right-nav .nav-ele-paper {
+    background: #3c3c3c;
+  }
+  
+  .right-nav .nav-about,
+  .right-nav .nav-announcement {
+    background: url('https://www.uniqlo.cn/public/bin/images/header/new_flg.png') no-repeat;
+  }
+  
+  .right-nav .nav-about {
+    background-position: 73px 8px;
+  }
+  
+  .right-nav .nav-announcement {
+    background-position: 83px 8px;
+  }
+  
+  .right-nav .nav-enterprise a:after,
+  .right-nav .nav-guide a:after,
+  .right-nav .nav-about a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -22px;
+    width: 0px;
+    height: 20px;
+    border-left: 1px dotted #fff;
+  }
+  
+  
+  /*u-main-nav-list*/
+  
+  #u-main-nav-list {
+    position: absolute;
+    width: 1280px;
+    z-index: 2000;
+  letter-spacing: 1px;
+  }
+  
+  #u-main-nav-list .nav-close-btn {
+    font-size: 36px;
+    color: #fe0000;
+    text-decoration: none;
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+  
+  #u-main-nav-list .nav-women-list,
+  #u-main-nav-list .nav-men-list,
+  #u-main-nav-list .nav-kids-list,
+  #u-main-nav-list .nav-baby-list,
+  #u-main-nav-list .company-info,
+  #u-main-nav-list .company-about {
+    position: absolute;
+    display: none;
+    top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: #fff;
+  }
+  
+  #u-main-nav-list .nav-women-list,
+  #u-main-nav-list .nav-men-list,
+  #u-main-nav-list .nav-kids-list,
+  #u-main-nav-list .nav-baby-list {
+    height: 570px;
+  }
+  
+  #u-main-nav-list .nav-women-list:before,
+  #u-main-nav-list .nav-men-list:before,
+  #u-main-nav-list .nav-kids-list:before,
+  #u-main-nav-list .nav-baby-list:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+  
+  #u-main-nav-list .nav-women-list:before {
+  
+  
+  
+  
+    left: 100px;
+  }
+  
+  #u-main-nav-list .nav-men-list:before {
+    left: 200px;
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  #u-main-nav-list .nav-kids-list:before {
+  
+  
+  
+  
+  
+    left: 300px;
+  }
+  
+  #u-main-nav-list .nav-baby-list:before {
+    left: 400px;
+  }
+  
+  #u-main-nav-list dl {
+    float: left;
+    height: 100%;
+  
+  
+    width: 25%;
+  }
+  
+  #u-main-nav-list dt {
+    width: 280px;
+    padding: 5px 0;
+    color: #fe0000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #u-main-nav-list dd {
+    margin: 13px 0 0 0;
+    font-size: 12px;
+    cursor:pointer;
+    border-right: 1px dashed #ccc;
+    width:49%;
+    display: inline-block;
+  }
+  dd.list-img-hover{
+    margin-top:10px;
+      width:100%!important;
+      border:none!important;
+  }
+  
+  #u-main-nav-list dd:nth-of-type(2n) {
+    padding-left:5px;
+    border:none;
+  }
+  #u-main-nav-list div.inline-title{
+      margin:14px 0 0 0;
+      font-size:12px;
+      padding:0;	
+  }
+      #u-main-nav-list dd:last-child{
+          border:none;
+      }
+  
+  /*#u-main-nav-list dd.inline-right {
+    padding-left:10px;
+    width:40%;
+    border:none;
+    
+  }*/
+  
+  #u-main-nav-list dd.hot a {
+    position: relative;
+  }
+  
+  #u-main-nav-list dd.hot a:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    background: url('https://www.uniqlo.cn/public/bin/images/header/hot_flg.png') no-repeat;
+      background-size: 21px 16px;
+  }
+  
+  #u-main-nav-list dd.new a {
+    position: relative;
+  }
+  
+  #u-main-nav-list dd.new a:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    background: url('https://www.uniqlo.cn/public/bin/images/header/new_flg.png') no-repeat;
+      background-size: 21px 16px;
+  }
+  
+  #u-main-nav-list .nav-list-part {
+    height: 33%;
+    padding: 5px 0 10px;
+  }
+  
+  #u-main-nav-list .nav-list-part a {
+    color: #7f7f7f;
+    text-decoration: none;
+  }
+  
+  #u-main-nav-list .nav-list-part a:hover{
+    color:#fe0000;
+  }
+  
+  #u-main-nav-list .nav-list-part .list-img-hover img {
+    border: 1px solid #e6e6e6;
+    width: 310px;
+  }
+  
+  #u-main-nav-list .nav-list-part .list-img-hover img:hover {
+    border: 1px solid #f00;
+  }
+  
+  #u-main-nav-list .nav-list-part .list-text-hover {
+    padding: 4px 0;
+    margin-top:10px;
+      width: 100%!important;
+      border:none!important;
+  }
+      #u-main-nav-list .nav-list-part .list-text-hover a{
+          padding-left:5px;
+      }
+  #u-main-nav-list .nav-list-part .list-text-hover:hover {
+    background: #f00;
+  }
+  
+  #u-main-nav-list .nav-list-part .list-text-hover:hover a {
+    color: #fff;
+  }
+  
+  /*.company-info*/
+  
+  #u-main-nav-list .company-info:before,
+  #u-main-nav-list .company-about:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+  
+  #u-main-nav-list .company-info:before {
+    right: 625px;
+  }
+  
+  .company-info>ul>li {
+    float: left;
+    width: 25%;
+  }
+  
+  .company-info .company-nav-list li {
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .company-info .company-nav-list li:hover {
+    background: #f00;
+  }
+  
+  .company-info .company-nav-list li:hover a {
+    color: #fff;
+  }
+  
+  .company-info .company-nav-list a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .company-info .company-nav-list .company-title a {
+    font-size: 16px;
+    color: #f00;
+    font-weight: 600;
+    letter-spacing:1px;
+  }
+  
+  
+  /*.company-about*/
+  
+  #u-main-nav-list .company-about:before {
+    right: 395px;
+  }
+  
+  .company-about>ul>li {
+    float: left;
+    width: 25%;
+  }
+  
+  .company-about .company-about-list li {
+    text-align: center;
+  }
+  
+  .company-about .company-about-list li:first-of-type:hover {
+    background: #f00;
+  }
+  
+  .company-about .company-about-list li:first-of-type:hover a {
+    color: #fff;
+  }
+  
+  .company-about .company-about-list li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .company-about .company-about-list .company-about-title {
+    height: 38px;
+  line-height:18px;
+  }
+  
+  .company-about .company-about-list .company-about-title a {
+    font: bold 14px;
+    color: #f00;
+  }
+  
+  .company-about .social-about-list {
+    padding-top: 50px;
+  }
+  
+  .company-about .social-about-list .social-about a {
+    color: #f00;
+    font-weight: 900;
+    font-size: 14px;
+  }
+  
+  .company-about .social-about-list .social-about:hover {
+    background: #f00;
+  }
+  
+  
+  
+  .company-about .social-about-list .social-about:hover a {
+    color: #fff;
+  }
+      .company-about-list ul li:nth-child(2){
+          width:315px;
+          height:190px;
+      }
+      
+      .company-about-img_01{
+          background:url('https://www.uniqlo.cn/public/image/L1/2018/10.11/APP.jpg')no-repeat center center;
+      }
+      .company-about-img_02{
+          background:url('https://www.uniqlo.cn/public/image/L1/2018/10.11/wecat.jpg')no-repeat center center;
+      }
+      .company-about-img_03{
+          background:url('https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_CHINA.jpg')no-repeat center center;
+      }
+      .company-about-img_04{
+          background:url('https://www.uniqlo.cn/public/Image/L1/nav/nav-Qcode/2017/06/16/QR_service.jpg')no-repeat center center;
+      }
+      .list-img-hover{
+          width:310px;
+          height: 197px;
+      }
+      .list-img-hover a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+      }
+      .nav-women-list .list-img-hover a{
+          background: url('https://www.uniqlo.cn/public/image/L1/2019/common/files/DHTJ-W.jpg')no-repeat;
+          background-size:310px 197px;
+      }
+      .nav-men-list .list-img-hover a{
+          background: url('https://www.uniqlo.cn/public/image/L1/2019/common/files/DHTJ-M.jpg')no-repeat;
+          background-size:310px 197px;
+      }
+      .nav-kids-list .list-img-hover a{
+          background: url('https://www.uniqlo.cn/public/image/L1/2019/common/files/DHTJ-K.jpg')no-repeat;
+          background-size:310px 197px;
+      }
+      .nav-baby-list .list-img-hover a{
+          background: url('https://www.uniqlo.cn/public/image/L1/2019/common/files/DHTJ-B.jpg')no-repeat;
+          background-size:310px 197px;
+      }
+  
+  .u_relative {
+  
+      position: relative;
+      line-height: 0;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      box-sizing: border-box;
+      color: #fff;
+  
+      letter-spacing: 0px;
+  
+  }
+      
+     .u_relative div {
+  font-family: Uniqlo;
+  vertical-align: middle;
+  color:#ababab!important;
+  background: #f4f4f4!important;
+  border-right: 1px #dbdbdb solid;
+      border-top: 1px #dbdbdb solid;
+      border-bottom: 1px #dbdbdb solid;
+  }
+  
+  .u_relative div:first-child {
+      border-left: 1px #dbdbdb solid;
+  }
+  
+  .u_relative .on {
+  color: #1b1b1b!important;
+          background: #fff!important;
+      border-bottom: none;
+  }
+  .u_relative .on font {
+      border-bottom: 2px solid #378694;
+      padding: 0 2px;
+  }
+  .u_relative div:hover {background: #fff!important;}
+  .u_relative div:hover font{border-bottom: 2px solid #378694;color: #1b1b1b}
+  

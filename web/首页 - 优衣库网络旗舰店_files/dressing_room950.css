@@ -1,0 +1,674 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: FZLTHJW;  这里是说明调用来的字体名字
+    src: url('../images/FZLTHJW.TTF'); 这里是字体文件路径
+}
+/*- Html Tags Reset -*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure {padding:0; margin:0; }
+body{ font:12px/1.5 FZLTHJW;color:#3c3c3c; }
+abbr,article,aside,bb,datagrid,datalist,details,dialog,event-source,figure,figcaption,footer,header,mark,menu,meter,nav,output,progress,section,time {display: block; height:auto; }
+table{border-collapse:collapse; border-spacing:0; }
+ol, ul{list-style:none outside; }
+h1, h2, h3, h4, h5, h6{font-size:100%; }
+fieldset, img{border:0 none; vertical-align:middle; }
+/*img {background:url(/images/loading.gif) no-repeat center center; }*/
+a{color:#333; text-decoration:none; }
+a:hover{color:#900; text-decoration:none; }
+em{font-style:normal; }
+input, textarea{padding:2px; }
+textarea{overflow-y:auto; }
+input,select,textarea {font:12px FZLTHJW;}
+button{overflow:visible; padding:0;vertical-align:middle; }
+button,label{cursor:pointer; }
+.clearfix:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0;}
+.clearfix{*zoom:1;}
+.line_rx{ background:url(../images/index_content.png) 0 0 repeat-x; font-size:1px; height:1px; line-height:1px; margin-bottom:10px;}
+
+/*主体*/
+
+
+/*头部*/
+.dr_header_con{ width:1280px; height:150px; margin:0 auto;position:relative;zoom:1;}
+.dr_header{ width:1280px; height:150px; background:url(../images/picture/优衣库bannerV10_1280.gif) 0 0 no-repeat; position: relative;}
+.dr_header_bg1{ background:url(../images/dr_header_bg1.jpg) 0 0 no-repeat;}
+.dr_header_bg2{ background:url(../images/dr_header_bg2.jpg) 0 0 no-repeat;}
+.dr_header_bg3{ background:url(../images/dr_header_bg3.jpg) 0 0 no-repeat;}
+.dr_header_bg4{ background:url(../images/dr_header_bg4.jpg) 0 0 no-repeat;}
+.dr_header_bg5{ background:url(../images/dr_header_bg5.jpg) 0 0 no-repeat;}
+.dr_header_bg6{ background:url(../images/dr_header_bg6.jpg) 0 0 no-repeat;}
+
+/*头部-logo*/
+.dr_logo{ float:left; width:295px; height:82px;clear: both;}
+/*.dr_logo a{ display:block; width:191px; height:51px; background:url(../images/dr_logo.png) 0 0 no-repeat; text-indent:-9999px; margin:16px 0 0 23px;}*/
+.dr_logo a{ display:block; width:211px; height:23px; background:url(../images/picture/优衣库标题.png) 0 0 no-repeat; text-indent:-9999px; margin:30px 0 0 070px;}
+
+/*头部-城市*/
+/* .dr_city{ float:left; width:592px; height:50px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2m9tVX_hXXXXXXXXX-196993935.png) left 0 no-repeat; padding:7px 2px; overflow:hidden; } */
+.dr_city{ float:left; width:592px; height:50px; padding:7px 2px; overflow:hidden; }
+.city_name{ float:left; height:46px; border-right:0px solid #ddd; padding:0 0px 0 0; margin:0 0px 0 0; overflow:hidden;}
+.city_name h2{ font-size:26px; line-height:30px; font-weight:normal;color:#3c3c3c;}
+.city_name span{ color:#a1a1a1;}
+.city_name a.citys{ display:block; width:20px; height:51px; background:url(../images/picture/位置.png) 0 0 no-repeat; text-indent:-9999px; margin:5px 0 0 0px;}
+
+.city{ float:left; margin:-4px 0 0 3px;font-family: FZLTHJW;}
+/* .city{ float:left; margin:-4px 0 0 3px;} */
+.city h2{ font-size:15px; line-height:34px; font-weight:normal;color:#3c3c3c;font-family: FZLTHJW !important;}
+/* .city h2{ font-size:15px; line-height:34px; font-weight:normal;color:#3c3c3c;} */
+.city a.change_city{ display:block; width:72px; height:22px;top:26px;position:absolute;}
+/*.city a.change_city:hover{ background:#900;}*/
+.city .near_un{ display:block; height:20px; line-height:20px; margin:5px 0 0 0;}
+.city .near_un i{  float:left; width:20px; height:20px; margin:0 8px 0 0;cursor:pointer;}
+.city .near_un i.city_wz{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2FbdZXW4XXXXXXXXX-196993935.png) 0 0 no-repeat;}
+.city .near_un i.city_wz2{ display: none; background:url(https://img.alicdn.com/imgextra/i4/196993935/T2FbdZXW4XXXXXXXXX-196993935.png) 0 -20px no-repeat;}
+.city .near_un a{ float:left; color:#666; margin:0 8px 0 0;width:210px;}
+.city .near_un a:hover{ color:#F00;}
+#wubaidu{float:left;position:absolute;top:45px;}
+#wubaidu select{border:1px solid #abadb3;margin-right:5px;}
+
+/*头部-优惠*/
+.preferential{float:left; width:321px; height:82px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2m9tVX_hXXXXXXXXX-196993935.png) left 0 no-repeat; overflow:hidden; position:relative;}
+
+.preferential ul.preferential_side_bar{ width:10px; position:absolute; top:25px; right:10px; overflow:hidden;z-index:1000;}
+.preferential ul.preferential_side_bar li{ display:block; width:8px; height:8px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2kMRVXV0aXXXXXXXX-196993935.png) 0 0 no-repeat; cursor:pointer; margin:0 0 4px 0; z-index:10;}
+.preferential ul.preferential_side_bar li.current{ background:url(https://img.alicdn.com/imgextra/i3/196993935/T2kMRVXV0aXXXXXXXX-196993935.png) 0 -8px no-repeat;}
+
+.preferential ul.preferential_con{ width:321px; height:82px; position:absolute; top:0; overflow:hidden;}
+.preferential ul.preferential_con li{ display:block; width:265px; height:58px; padding:11px 45px 11px 11px;}
+.preferential ul.preferential_con li i{ display:block; float:left; width:58px; height:57px; margin:0 12px 0 0;}
+.preferential ul.preferential_con li a{ cursor:pointer; margin-top:4px; display:block;color:#006699;}
+.preferential ul.preferential_con li a:hover{ cursor:pointer;color:#900;}
+.preferential ul.preferential_con li p{ margin-top:10px;color:#3c3c3c;}
+.preferential ul.preferential_con li p a{ color:#F00; display:inline;color:red;}
+
+.preferential ul.preferential_con li.preferential_1{border-top:3px solid red;}
+.preferential ul.preferential_con li.preferential_1 i{ background:url(../images/icon57.png) no-repeat;}
+
+
+.preferential ul.preferential_con li.preferential_2{border-top:3px solid #ffa800;}
+.preferential ul.preferential_con li.preferential_2 i{ background:url(https://img.alicdn.com/imgextra/i3/196993935/T2XH0ZXV4XXXXXXXXX-196993935.png) -116px 0 no-repeat;}
+
+
+/*天气*/
+.weather{ float:left;font-family: FZLTHJW; width:150px; height:80px; background:url(../images/weather_bg.png) 0 0 no-repeat; position:relative; overflow:hidden;}
+/* .weather{ float:left; width:150px; height:80px; background:url(../images/weather_bg.png) 0 0 no-repeat; position:relative; overflow:hidden;} */
+
+.weather ul { display:block; float:left; height:80px; overflow:hidden;}
+/*.weather ul li.new_w{ float:left; height:50px; width:133px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2usXWX9hXXXXXXXXX-196993935.png) right 0 no-repeat; color:#3c3c3c; overflow:hidden; padding:15px 12px; position:relative; cursor:pointer; opacity:0.9;}*/
+/*.weather ul li.newsex{ float:left; height:50px; width:42px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2usXWX9hXXXXXXXXX-196993935.png) right 0 no-repeat; color:#3c3c3c; overflow:hidden; padding:15px 12px; position:relative; cursor:pointer; opacity:0.9;}*/
+.weather ul li i{ display:block; float:left; width:130px; height:50px; margin:5px 0 0 17px;}
+
+/*.weather ul li i.nio-0{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 0 no-repeat;}*/
+.weather ul li i.nio-0{ background:url(../images/picture/晴天.png)  no-repeat;}
+/*.weather ul li i.nio-1{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px 0 no-repeat;}*/
+.weather ul li i.nio-1{ background:url(../images/picture/多云.png)  no-repeat;}
+/*.weather ul li i.nio-2{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px 0 no-repeat;}*/
+.weather ul li i.nio-2{ background:url(../images/picture/阴天.png)  no-repeat;}
+/*.weather ul li i.nio-3{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px 0 no-repeat;}*/
+.weather ul li i.nio-3{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-4{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px 0 no-repeat;}*/
+.weather ul li i.nio-4{ background:url(../images/picture/雷阵雨.png)  no-repeat;}
+/*.weather ul li i.nio-5{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px 0 no-repeat;}*/
+.weather ul li i.nio-5{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-6{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px 0 no-repeat;}*/
+/*.weather ul li i.nio-6{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px 0 no-repeat;}*/
+.weather ul li i.nio-6{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li i.nio-7{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px 0 no-repeat;}*/
+.weather ul li i.nio-7{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-8{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px 0 no-repeat;}*/
+.weather ul li i.nio-8{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-9{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -50px no-repeat;}*/
+.weather ul li i.nio-9{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li i.nio-10{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -50px no-repeat;}*/
+.weather ul li i.nio-10{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li i.nio-11{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -50px no-repeat;}*/
+.weather ul li i.nio-11{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li i.nio-12{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -50px no-repeat;}*/
+.weather ul li i.nio-12{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li i.nio-13{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px -50px no-repeat;}*/
+.weather ul li i.nio-13{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li i.nio-14{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px -50px no-repeat;}*/
+.weather ul li i.nio-14{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li i.nio-15{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px -50px no-repeat;}*/
+.weather ul li i.nio-15{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li i.nio-16{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px -50px no-repeat;}*/
+.weather ul li i.nio-16{ background:url(../images/picture/中雪.png)  no-repeat;}
+/*.weather ul li i.nio-17{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px -50px no-repeat;}*/
+.weather ul li i.nio-17{ background:url(../images/picture/大雪.png)  no-repeat;}
+/*.weather ul li i.nio-18{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px -50px no-repeat;}*/
+.weather ul li i.nio-18{ background:url(../images/picture/雾.png)  no-repeat;}
+/*.weather ul li i.nio-19{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -100px no-repeat;}*/
+.weather ul li i.nio-19{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li i.nio-20{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -100px no-repeat;}*/
+.weather ul li i.nio-20{ background:url(../images/picture/沙尘暴.png)  no-repeat;}
+/*.weather ul li i.nio-21{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -100px no-repeat;}*/
+.weather ul li i.nio-21{ background:url(../images/picture/浮尘.png)  no-repeat;}
+/*.weather ul li i.nio-22{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -100px no-repeat;}*/
+.weather ul li i.nio-22{ background:url(../images/picture/扬沙.png)  no-repeat;}
+/*.weather ul li i.nio-23{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px -100px no-repeat;}*/
+.weather ul li i.nio-23{ background:url(../images/picture/强沙尘暴.png)  no-repeat;}
+/*.weather ul li i.nio-24{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px -100px no-repeat;}*/
+.weather ul li i.nio-24{ background:url(../images/picture/霾.png)  no-repeat;}
+/*.weather ul li i.nio-25{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px -100px no-repeat;}*/
+.weather ul li i.nio-25{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-26{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px -100px no-repeat;}*/
+.weather ul li i.nio-26{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li i.nio-27{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px -100px no-repeat;}*/
+.weather ul li i.nio-27{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li i.nio-28{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px -100px no-repeat;}*/
+.weather ul li i.nio-28{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li i.nio-29{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -150px no-repeat;}*/
+.weather ul li i.nio-29{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li i.nio-30{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -150px no-repeat;}*/
+.weather ul li i.nio-30{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li i.nio-31{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -150px no-repeat;}*/
+.weather ul li i.nio-31{ background:url(../images/picture/中雪.png)  no-repeat;}
+/*.weather ul li i.nio-32{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -150px no-repeat;}*/
+.weather ul li i.nio-32{ background:url(../images/picture/大雪.png)  no-repeat;}
+
+/*.weather ul li.w_select i.nio-0{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -250px no-repeat;}*/
+.weather ul li.w_select i.nio-0{ background:url(../images/picture/晴天.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-1{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-1{ background:url(../images/picture/多云.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-2{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-2{ background:url(../images/picture/阴天.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-3{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-3{ background:url(../images/picture/小雨.png)  no-repeat;}
+.weather ul li.w_select i.nio-4{ background:url(../images/picture/雷阵雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-4{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-5{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-5{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px -250px no-repeat;}*/
+/*.weather ul li.w_select i.nio-6{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px -250px no-repeat;}*/
+/*.weather ul li.w_select i.nio-6{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-6{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-7{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-7{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-8{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px -250px no-repeat;}*/
+.weather ul li.w_select i.nio-8{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-9{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -50px no-repeat;}*/
+.weather ul li.w_select i.nio-9{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-10{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-10{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-11{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-11{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-12{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-12{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-13{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-13{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-14{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-14{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-15{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-15{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-16{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-16{ background:url(../images/picture/中雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-17{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-17{ background:url(../images/picture/大雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-18{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px -300px no-repeat;}*/
+.weather ul li.w_select i.nio-18{ background:url(../images/picture/雾.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-19{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -350px no-repeat;}*/
+.weather ul li.w_select i.nio-19{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-20{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-20{ background:url(../images/picture/沙尘暴.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-21{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-21{ background:url(../images/picture/浮尘.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-22{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-22{ background:url(../images/picture/扬沙.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-23{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -200px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-23{ background:url(../images/picture/强沙尘暴.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-24{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -250px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-24{ background:url(../images/picture/霾.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-25{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -300px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-25{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-26{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -350px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-26{ background:url(../images/picture/小雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-27{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -400px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-27{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-28{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -450px -350px no-repeat;}*/
+.weather ul li.w_select i.nio-28{ background:url(../images/picture/中雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-29{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) 0 -400px no-repeat;}*/
+.weather ul li.w_select i.nio-29{ background:url(../images/picture/大雨.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-30{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -50px -400px no-repeat;}*/
+.weather ul li.w_select i.nio-30{ background:url(../images/picture/小雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-31{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -100px -400px no-repeat;}*/
+.weather ul li.w_select i.nio-31{ background:url(../images/picture/中雪.png)  no-repeat;}
+/*.weather ul li.w_select i.nio-32{ background:url(https://img.alicdn.com/imgextra/i4/196993935/T2z9pUX0taXXXXXXXX-196993935.png) -150px -400px no-repeat;}*/
+.weather ul li.w_select i.nio-32{ background:url(../images/picture/大雪.png)  no-repeat;}
+
+.weather ul li p.w_t_1{ position:absolute; left:50px; top:1px; font-size:15px; color:black;}
+.weather ul li p.w_t_2{ position:absolute; left:45px; top:20px; }
+.weather ul li p.w_t_week{ position:absolute; left:75px; top:3px; color:black;}
+.weather ul li p.w_t_name{ position:absolute; left:50px; top:18px; color:black;}
+/*.weather ul li.w_select{ background:url(../images/w_select_bg.png) 0 0 repeat;}*/
+/*.weather ul li.w_select p.w_t_1{ color:#FFF;}*/
+/*.weather ul li.w_select p.w_t_2{ color:#FFF;}*/
+/*.weather ul li.w_select p.w_t_week{ color:#FFF;}*/
+/*.weather ul li.w_select p.w_t_name{ color:#FFF;}*/
+
+/*新版新版*/
+.weather ul.newwea li.select{background:#fff none repeat scroll 0 0;}
+.weather ul.newwea li a{ display:block; height:70px; width:60px;position:absolute;top:2px;left:0px}
+.weather ul.newwea li.rw_all a { background:url(../images/dr_main_con_sub_nav.png) -80px -0px no-repeat;}
+.weather ul.newwea li.rw_nvzhuang a { background:url(../images/dr_main_con_sub_nav.png) -151px 0 no-repeat;}
+.weather ul.newwea li.rw_nanzhuang a { background:url(../images/dr_main_con_sub_nav.png) -219px 0 no-repeat;}
+.weather ul.newwea li.rw_tongzhuang a { background:url(../images/dr_main_con_sub_nav.png) -282px 0 no-repeat;}
+.weather ul.newwea li.rw_yinyouer a { background:url(../images/dr_main_con_sub_nav.png) -351px 0 no-repeat;}
+
+.weather ul.newwea li.rw_all a:hover { background:url(../images/dr_main_con_sub_nav.png) -80px -62px no-repeat;}
+.weather ul.newwea li.rw_nvzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -151px -63px no-repeat;}
+.weather ul.newwea li.rw_nanzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -219px -63px no-repeat;}
+.weather ul.newwea li.rw_tongzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -282px -63px no-repeat;}
+.weather ul.newwea li.rw_yinyouer a:hover { background:url(../images/dr_main_con_sub_nav.png) -351px -63px no-repeat;}
+
+.weather ul.newwea li.rw_all a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -80px -62px no-repeat;}
+.weather ul.newwea li.rw_nvzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -151px -63px no-repeat;}
+.weather ul.newwea li.rw_nanzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -219px -63px no-repeat;}
+.weather ul.newwea li.rw_tongzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -282px -63px no-repeat;}
+.weather ul.newwea li.rw_yinyouer a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -351px -63px no-repeat;}
+/*新版新版*/
+/*.dr_header_con #two_ma{width:200px;height:200px;background:url(../images/27.png) 0 0 no-repeat;position:relative;left:1007px;top:-238px;z-index:1000;}*/
+.dr_header_con #two_ma{width:400px;height:200px;background:url(../images/27.png) 0 0 no-repeat;position:relative;left:996px;top:-188px;z-index:1000;}
+/*.w_sq a{ display:block; width:75px; height:80px; background:url(https://img.alicdn.com/imgextra/i1/196993935/T2c3hUX0XaXXXXXXXX-196993935.png) 0 0 no-repeat;}*/
+
+
+
+/*.w_zk{  position:relative; top:102px; left:679px;}*/
+.w_sq{ position:relative; top:90px; left:679px; width:57px; height:57px;}
+.w_sq a{position:relative;  display:block; width:57px; height:57px; background:url(../images/picture/推荐打开状态.png) 0 0 no-repeat;}
+/*.w_zk a{ display:block; width:75px; height:80px; background:url(https://img.alicdn.com/imgextra/i2/196993935/T2PlhUX0NaXXXXXXXX-196993935.png) 0 0 no-repeat;}*/
+/*.w_zk a{ display:block; width:70px; height:28px; background:url(../images/picture/推荐.png) 0 0 no-repeat;}*/
+
+.w_sq_wm{ position:relative; top:33px; left:768px; width:57px; height:57px;}
+.w_sq_wm a{position:relative;  display:block; width:57px; height:57px; background:url(../images/picture/女装打开状态.png) 0 0 no-repeat;}
+
+/*.w_zk_wm{  position:relative; top:74px; left:768px;}*/
+/*.w_zk_wm { display:block; width:70px; height:28px; background:url(../images/picture/女装.png) 0 0 no-repeat;}*/
+
+.w_sq_man{ position:relative; top:-24px; left:856px; width:57px; height:57px;}
+.w_sq_man a{position:relative;  display:block; width:57px; height:57px; background:url(../images/picture/男装打开状态.png) 0 0 no-repeat;}
+
+/*.w_zk_man{  position:relative; top:46px; left:856px;}*/
+/*.w_zk_man { display:block; width:70px; height:28px; background:url(../images/picture/男装.png) 0 0 no-repeat;}*/
+.rw_all{ position:relative; top:90px; left:679px; width:57px; height:57px;}
+.rw_all2{ position:relative; top:90px; left:679px; width:57px; height:57px;}
+.rw_all2 a.select{position:relative; width:57px; height:57px;display:block;  background:url(../images/picture/推荐.gif) 0 0 no-repeat;}
+.rw_all a.select{position:relative; width:57px; height:57px; display:block;  background:url(../images/picture/推荐初始状态.png) 0 0 no-repeat;}
+.rw_nvzhuang{ position:relative; top:33px; left:768px;  width:57px; height:57px;}
+.rw_nvzhuang2{ position:relative; top:33px; left:768px;  width:57px; height:57px;}
+.rw_nvzhuang2 a.select{position:relative; width:57px; height:57px;display:block; background:url(../images/picture/女装.gif) 0 0 no-repeat;}
+.rw_nvzhuang a.select{position:relative;  width:57px; height:57px; display:block; background:url(../images/picture/女装初始状态.png) 0 0 no-repeat;}
+.rw_nanzhuang{ position:relative; top:-24px; left:856px; width:57px; height:57px;}
+.rw_nanzhuang2{ position:relative; top:-24px; left:856px; width:57px; height:57px;}
+.rw_nanzhuang2 a.select{position:relative;  width:57px; height:57px;display:block; background:url(../images/picture/男装.gif) 0 0 no-repeat;}
+.rw_nanzhuang a.select{position:relative;  width:57px; height:57px;  display:block; background:url(../images/picture/男装初始状态.png) 0 0 no-repeat;}
+/*.weather ul.newwea li.rw_all a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -80px -62px no-repeat;}*/
+
+
+
+
+
+
+
+/*分类*/
+.dr_main_con{ width:1280px; height:400px; margin:0 auto; position:relative;zoom:1;}
+.dr_main_con_bg1{ background:url(../images/dr_main_con_bg11.jpg) 0 0 no-repeat;}
+.dr_main_con_bg2{ background:url(../images/dr_main_con_bg21.jpg) 0 0 no-repeat;}
+.dr_main_con_bg3{ background:url(../images/dr_main_con_bg31.jpg) 0 0 no-repeat;}
+.dr_main_con_bg4{ background:url(../images/dr_main_con_bg41.jpg) 0 0 no-repeat;}
+.dr_main_con_bg5{ background:url(../images/dr_main_con_bg51.jpg) 0 0 no-repeat;}
+.dr_main_con_bg6{ background:url(../images/dr_main_con_bg61.jpg) 0 0 no-repeat;}
+
+.dr_main_con_sub_nav{ width:1280px; height:70px; background:url(../images/dr_main_con_sub_nav_bg.png) 0 0 no-repeat;}
+.dr_main_con_sub_nav ul{ float:left; height:70px;}
+.dr_main_con_sub_nav ul li{  float:left; height:70px; width:97.2px; background:url(https://img.alicdn.com/imgextra/i3/196993935/T2usXWX9hXXXXXXXXX-196993935.png) right 0 no-repeat;}
+.dr_main_con_sub_nav ul li.select{ background:#FFF;}
+.dr_main_con_sub_nav ul li a{ display:block; height:70px; width:70px;}
+
+/*分类1*/
+.dr_main_con_sub_nav ul.rw_sub_nav li a{ display:block; height:70px; width:74px; margin:0 2px 0 3px;}
+
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_all a { background:url(../images/dr_main_con_sub_nav.png) -70px -0px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nvzhuang a { background:url(../images/dr_main_con_sub_nav.png) -140px 0 no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nanzhuang a { background:url(../images/dr_main_con_sub_nav.png) -208px 0 no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_tongzhuang a { background:url(../images/dr_main_con_sub_nav.png) -282px 0 no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_yinyouer a { background:url(../images/dr_main_con_sub_nav.png) -351px 0 no-repeat;}
+
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_all a:hover { background:url(../images/dr_main_con_sub_nav.png) -70px -62px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nvzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -140px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nanzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -208px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_tongzhuang a:hover { background:url(../images/dr_main_con_sub_nav.png) -282px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_yinyouer a:hover { background:url(../images/dr_main_con_sub_nav.png) -351px -63px no-repeat;}
+
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_all a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -70px -62px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nvzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -140px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_nanzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -208px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_tongzhuang a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -282px -63px no-repeat;}
+.dr_main_con_sub_nav ul.rw_sub_nav li.rw_yinyouer a.select{ background:#fff url(../images/dr_main_con_sub_nav.png) -351px -63px no-repeat;}
+
+/*分类2*/
+.dr_main_con_sub_nav ul.ch_sub_nav li a{ display:block; float:left; width:94px; height:35px; margin:0 2px 0 0;}
+
+.dr_main_con_sub_nav ul.ch_sub_nav li.ch_all a{ display:block; height:70px; width:94px; margin:0 2px 0 0px; background:url(../images/dr_main_con_sub_nav.png) -420px 0 no-repeat;}
+
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_1{ background:url(../images/dr_main_con_sub_nav.png) -508px 0 no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_2{ background:url(../images/dr_main_con_sub_nav.png) -508px -35px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_1{ background:url(../images/dr_main_con_sub_nav.png) -605px 0 no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_2{ background:url(../images/dr_main_con_sub_nav.png) -605px -35px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_1{ background:url(../images/dr_main_con_sub_nav.png) -700px 0 no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_2{ background:url(../images/dr_main_con_sub_nav.png) -700px -35px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_1{ background:url(../images/dr_main_con_sub_nav.png) -797px 0 no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_2{ background:url(../images/dr_main_con_sub_nav.png) -797px -35px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_1{ background:url(../images/dr_main_con_sub_nav.png) -892px 0 no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_2{ background:url(../images/dr_main_con_sub_nav.png) -892px -35px no-repeat;}
+
+.dr_main_con_sub_nav ul.ch_sub_nav li.ch_all a:hover { background:url(../images/dr_main_con_sub_nav.png) -420px -63px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_1:hover { background:url(../images/dr_main_con_sub_nav.png) -508px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_2:hover { background:url(../images/dr_main_con_sub_nav.png) -508px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_1:hover { background:url(../images/dr_main_con_sub_nav.png) -605px -60px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_2:hover { background:url(../images/dr_main_con_sub_nav.png) -605px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_1:hover { background:url(../images/dr_main_con_sub_nav.png) -700px -62px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_2:hover { background:url(../images/dr_main_con_sub_nav.png) -700px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_1:hover { background:url(../images/dr_main_con_sub_nav.png) -797px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_2:hover { background:url(../images/dr_main_con_sub_nav.png) -797px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_1:hover { background:url(../images/dr_main_con_sub_nav.png) -892px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_2:hover { background:url(../images/dr_main_con_sub_nav.png) -892px -97px no-repeat;}
+
+.dr_main_con_sub_nav ul.ch_sub_nav li.ch_all a.select { background:#fff url(../images/dr_main_con_sub_nav.png) -420px -63px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_1.select { background:#fff url(../images/dr_main_con_sub_nav.png) -508px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_a_2.select { background:#fff url(../images/dr_main_con_sub_nav.png) -508px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_1.select { background:#fff url(../images/dr_main_con_sub_nav.png) -605px -60px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_b_2.select { background:#fff url(../images/dr_main_con_sub_nav.png) -605px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_1.select { background:#fff url(../images/dr_main_con_sub_nav.png) -700px -62px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_c_2.select { background:#fff url(../images/dr_main_con_sub_nav.png) -700px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_1.select { background:#fff url(../images/dr_main_con_sub_nav.png) -797px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_d_2.select { background:#fff url(../images/dr_main_con_sub_nav.png) -797px -97px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_1.select { background:#fff url(../images/dr_main_con_sub_nav.png) -892px -61px no-repeat;}
+.dr_main_con_sub_nav ul.ch_sub_nav li a.ch_e_2.select { background:#fff url(../images/dr_main_con_sub_nav.png) -892px -97px no-repeat;}
+
+
+
+
+
+
+.youyigui_btn{ display:block; position:relative; top:-80px; left:1041px; width:234px; height:80px; background:url(../images/right_h2.png) 0 0 no-repeat;;}
+
+
+/* 衣服*/
+.mini-kv-slide{ width:1218px; height:184px; background:url(../images/T2BWlYX8JXXXXXXXXX-196993935.png) 0 0 no-repeat; margin:9px 10px; position:relative;top:98px;}
+.mini-kv-container{ width:1010px; height:180px; overflow:hidden; position:relative; margin:0 auto;}
+.mini-kv-container ul{ width: 9999em; height:180px; position:relative;}
+.mini-kv-container ul li{ float:left; margin:3px 10px;}
+.mini-kv-container ul li img{ width:180px; height:180px;}
+
+.mini-kv-slide a.mini-btn{ display:block; width:8px; height:13px; position:absolute; top:50%; margin-top:-6px; text-indent:200%; overflow:hidden; white-space:nowrap;}
+.mini-kv-slide a.mini-kv-prev{ background:url(https://img.alicdn.com/imgextra/i1/196993935/T2tWxYX5FXXXXXXXXX-196993935.png) 0 0 no-repeat; left:56px;}
+.mini-kv-slide a.mini-kv-next{ background:url(https://img.alicdn.com/imgextra/i1/196993935/T2tWxYX5FXXXXXXXXX-196993935.png) -8px 0 no-repeat; right:56px;}
+.mini-kv-slide a.mini-kv-prev:hover{ background:url(https://img.alicdn.com/imgextra/i1/196993935/T2tWxYX5FXXXXXXXXX-196993935.png) 0 -13px no-repeat; left:56px;}
+.mini-kv-slide a.mini-kv-next:hover{ background:url(https://img.alicdn.com/imgextra/i1/196993935/T2tWxYX5FXXXXXXXXX-196993935.png) -8px -13px no-repeat; right:56px;}
+
+.index-suit{
+    height: 180px;
+    padding: 100px 0;
+}
+
+
+/*婴儿装-内容弹出*/
+.product_inf{ position:absolute; top:5px; left:-10px; width:206px; height:auto; overflow:hidden; text-align:center; color:#666; z-index:1000;}
+.product_inf .inf_top{ width:206px; height:6px; background:url(https://img.alicdn.com/imgextra/i2/196993935/T25D4TX1NaXXXXXXXX-196993935.png) 0 0 no-repeat;}
+
+.product_inf .inf_con{ width:176px; height:auto; background:url(https://img.alicdn.com/imgextra/i2/196993935/T25D4TX1NaXXXXXXXX-196993935.png) 0 -6px repeat-y; padding:4px 15px; overflow:hidden;}
+.product_inf .inf_con p.price{ font-size:26px; color:#ff0000;}
+.product_inf .inf_con p.price span{ font-size:12px;}
+.product_inf .inf_con p.stock{}
+.product_inf .inf_con p.stock span{ color:#ff0000; margin:0 5px;}
+.product_inf .inf_con a{ display:block; text-align:center; color:#FFF; background:#F00; width:140px; height:30px; line-height:30px; margin:0 auto;}
+.product_inf .inf_con a:hover{ background:#900;}
+
+.inf_xx{ width:176px; background:url(https://img.alicdn.com/imgextra/i1/196993935/T2raFZXYBXXXXXXXXX-196993935.png) 0 top repeat-x; margin:6px 0 8px 0; padding-top:8px;  text-align:center; line-height:20px;}
+
+.product_inf .inf_bom{ width:206px; height:20px; background:url(https://img.alicdn.com/imgextra/i1/196993935/T2S20WX7FXXXXXXXXX-196993935.png) 0 -280px no-repeat; }
+
+
+.none{
+    display: none;
+}
+
+.tc{
+    text-align: center;
+}
+
+.pa{
+    position: absolute;
+}
+.mini-kv-hover,.mini-kv-add{
+    /*background: url(../images/mini-kv-hover.png) no-repeat;*/
+}
+.mini-kv-hover{
+    width: 186px;
+    height: 166px;
+    padding: 25px 15px;
+    top: 0;
+}
+.mini-kv-content{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 186px;
+    height: 166px;
+}
+.alpha{filter:alpha(opacity=70);opacity: 0.8;
+    top: -20px;
+    left: -17px;
+    position: relative;
+}  /*设置图片透明*/
+.mini-kv-hover strong{
+    font-size: 30px;
+}
+.mini-kv-hover small{
+    color: #000000;
+}
+.mini-kv-hover span{
+    color: red;
+    font: bold;
+}
+a.mini-kv-add{
+
+    width: 74px;
+    height: 26px;
+    top: 134px;
+    left: 58px;
+    display: block;
+    color: #e70012;
+    line-height: 25px;
+    background-color:#ffa800 ;
+    color: #fff;
+    font-weight: bold;
+}
+.mini-kv-hover a.ft14{
+    display: block;
+    margin-top: 15px;
+    height: 40px;
+    color: #000;
+    line-height: 20px;
+    overflow: hidden;
+}
+.baby-style-mask{
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 483px;
+    height: 70px;
+    right: 182px;
+    top: 0;
+    z-index: 2;
+}
+.male-style-mask{
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 193px;
+    height: 35px;
+    right: 474px;
+    top: 0;
+    z-index: 2;
+}
+
+.children-style-mask{
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 193px;
+    height: 35px;
+    right: 378px;
+    top: 35px;
+    z-index: 2;
+}
+.style-children_mask{
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 96px;
+    height: 35px;
+    right: 378px;
+    z-index: 2;
+}
+.ft16{
+    color: red;
+}
+
+/*== 地图弹窗 ==*/
+.map_light_box{ width:760px;  background:#FFF; position:fixed; top:100px; left:50%; margin-left:-400px; z-index:999; padding:20px;}
+a.light_box_close{  background:url(https://img.alicdn.com/imgextra/i3/196993935/T2Ra8YX58XXXXXXXXX-196993935.png) 0 0 no-repeat; width:41px; height:41px; position:absolute; right:-15px; top:-15px;}
+.map_light_box h3{ font-size:20px; color:#999;  font-weight:normal;}
+.light_box_u_map_con{ background:#555; width:760px; height:405px;}
+.mb15{
+    margin-bottom: 15px;
+}
+
+/*kimi*/
+.mini-city{
+    background-color: #fff;
+    width: 380px;
+    top: 4px;
+    left: 250px;
+    color: #555;
+    padding: 5px 12px;
+    border: 3px solid #ccc;
+    z-index:100;
+}
+.mini-city input {
+    background: none repeat scroll 0 0 #FF0000;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.pa{
+    position: absolute;
+}
+.mini-city-close{
+    width: 8px;
+    height: 8px;
+    right: 10px;
+    top: 11px;
+    background: url(https://img.alicdn.com/imgextra/i3/196993935/T21HNVXZhaXXXXXXXX-196993935.png) -33px -57px no-repeat ;
+    position: absolute;
+}
+.mini-city select {
+    border: 1px solid #ABADB3;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 15px;
+    width: 95px;
+}
+
+/*CoverScroll*/
+#suits-container{
+    height:400px;width:1280px;
+    position: relative;
+    overflow:hidden;
+	margin-left: 9px;
+}
+#suits-container .item{
+    width: 234px ;
+    height: 339px;
+    *height:380px;
+    background: rgba(255, 255, 255, .3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f000000',endColorstr='#3f000000')
+}
+.imgSuits{
+    /*width:100%;*/
+    /*height:100%;*/
+    margin-left:10px;
+    margin-top:10px;
+    width: 90%;
+    height: 297px;
+
+    cursor: pointer;
+}
+#suits-container .selectedItem{
+    /*border:2px solid #0071BC;*/
+    background-color: #ffffff;
+}
+.itemTitle{font-weight: bold;font:13px/1.5  FZLTHJW;text-shadow: 1px 1px #ddd;}
+
+.itemTitle div {width: 70px;position: static;top: 66px;height: 29px;}
+
+/*首页模特图风格*/
+.modelStyle1{ background:url(../images/dr_main_con_sub_nav.png) -518px 0 no-repeat;}
+.modelStyle2{ background:url(../images/dr_main_con_sub_nav.png) -518px -35px no-repeat;}
+.modelStyle3{ background:url(../images/dr_main_con_sub_nav.png) -614px 0 no-repeat;}
+.modelStyle4{ background:url(../images/dr_main_con_sub_nav.png) -614px -35px no-repeat;}
+.modelStyle5{ background:url(../images/dr_main_con_sub_nav.png) -708px 0 no-repeat;}
+.modelStyle6{ background:url(../images/dr_main_con_sub_nav.png) -713px -35px no-repeat;}
+.modelStyle7{ background:url(../images/dr_main_con_sub_nav.png) -804px 0 no-repeat;}
+.modelStyle8{ background:url(../images/dr_main_con_sub_nav.png) -804px -35px no-repeat;}
+.modelStyle9{ background:url(../images/dr_main_con_sub_nav.png) -900px 0 no-repeat;}
+.modelStyle10{ background:url(../images/dr_main_con_sub_nav.png) -900px -35px no-repeat;}
+
+.similarity{
+    /*6张图片*/
+    bottom: 35px;
+    *bottom:75px;
+    position: absolute;
+    left: 70%;
+    font-size: 2.5em;
+    width: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+	z-index:101;
+}
+.circle {
+    display:block;cursor:pointer; width:50px; height:50px; border-radius:25px; background-color:#FFF;
+}
+.similarity a img{ width:48px; height:48px; border-color: #000;
+    /*border-width:1px;*/
+    /*border-style:solid;*/
+    cursor: pointer;}
+
+.gotoroom {background-color: #ff0000;padding: 5px 35px;}
+
+.gotoroom a {
+    height: 45px;
+    color: #fff;
+    font:20px/1.5 FZLTHJW;
+}
+.gotoroom2 {background-color: #ff0000;padding: 5px 34px;position:relative;left:0px;width:235px;top:3px;}
+
+.gotoroom2 a {
+    height: 45px;
+    color: #fff;
+    font:20px/1.5 FZLTHJW;
+}
+/*切换按钮*/
+.dr_main_con a.home_arrow_left{ display:block; background:url(https://vfr.uniqlo.cn/u2/Home/Tpl/Public/images/weather_bg2.png) 0 0 repeat; width:50px; height:100px; position:absolute; top:127px; left:0px; z-index:500; cursor:pointer;}
+/*.dr_main_con a.home_arrow_left span{ display:block; background:url(https://img.alicdn.com/imgextra/i2/196993935/T2Y0lZXVhXXXXXXXXX-196993935.png) 0 0 no-repeat; width:29px; height:51px; margin:23px 0 0 8px;}*/
+.dr_main_con a.home_arrow_left:hover{ background:url(https://vfr.uniqlo.cn/u2/Home/Tpl/Public/images/weather_bg2.png) 0 -100px no-repeat;}
+
+.dr_main_con a.home_arrow_right{ display:block; background:url(https://vfr.uniqlo.cn/u2/Home/Tpl/Public/images/weather_bg2.png) -50px 0 repeat; width:50px; height:100px; position:absolute; top:127px; right:0px; z-index:500; cursor:pointer;}
+/*.dr_main_con a.home_arrow_right span{ display:block; background:url(https://img.alicdn.com/imgextra/i2/196993935/T2Y0lZXVhXXXXXXXXX-196993935.png) -29px 0 no-repeat; width:29px; height:51px; margin:23px 0 0 13px;}*/
+.dr_main_con a.home_arrow_right:hover{ background:url(https://vfr.uniqlo.cn/u2/Home/Tpl/Public/images/weather_bg2.png) -50px -100px no-repeat;}
+
+/*新需求*/
+#xmid{width:229px;height:300px;position:relative;top:-300px;}
+#gifclose{position:relative; left:182px; top:-283px; width:20px; height:20px;}
+#gifto4d{position:relative; left:191px; top:-282px; width:24px; height:24px;}

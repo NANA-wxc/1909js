@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* #header img{
+	width: 100%;
+}
+
+
+
+#nav img{
+	display: block;
+	width: 100%;
+	
+	} */
+	
+#xpart {
+	width: 100%;
+	height: 50px;
+	
+}
+#xpart .xpartCon {
+	width: 1280px;
+	height: 50px;
+	margin: 0 auto;
+	
+	
+}
+#xpart .xpartCon .left {
+	float: left;
+}
+#xpart .xpartCon .right {
+	float: right;
+}
+#xpart .xpartCon .xbanner {
+	float: left;
+	width: 1280px;
+	height: 50px;
+
+	position: relative;
+}
+#xpart .xpartCon .xbanner a {
+	width: 20px;
+	height: 50px;
+	display: none;	
+	position: absolute;
+	/* top: 0px; */
+	z-index: 51;
+}
+#xpart .xpartCon .xbanner a.xprev {
+	left: -20px;
+	background: url(../img/but.png) -98px -10px;
+	
+}
+#xpart .xpartCon .xbanner a.xprev:hover {
+	background-position: -27px -10px;
+}
+#xpart .xpartCon .xbanner a.xnext {
+	right: -20px;
+	background: url(../img/but.png) -98px -81px;
+	}
+	#xpart .xpartCon .xbanner a.xnext:hover {
+	background-position: -27px -81px;
+}
+#xpart .xpartCon .xbanner .xscroll {
+		width: 1280px;
+		height: 50px;
+		background: red;
+		position: relative;
+		overflow: hidden;
+}
+#xpart .xpartCon .xbanner .xscroll img {
+	position: absolute;
+	left: 1280px;
+	margin: 0 auto;
+	
+}
+#xpart .xpartCon .xbanner .xscroll img.xfirst {
+	left: 0;
+}
+#xpart .xpartCon .xbanner .xbtn {
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	left: 340px;
+	bottom: 10px;
+	border-radius: 20px;
+	text-align: center;
+	display: none;
+}
+#xpart .xpartCon .xbanner .xbtn span {
+	width: 10px;
+	height: 10px;
+	background: #666;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+#xpart .xpartCon .xbanner .xbtn span.hover {
+	background: #ff0099;
+}
