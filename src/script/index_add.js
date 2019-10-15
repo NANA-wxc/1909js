@@ -9,12 +9,11 @@ ajax.onreadystatechange=function(){
         let newsdata=JSON.parse(jsondata)
         let strhtml = ""
             for (let value of newsdata) {
-       
-
-                strhtml += `<li>
+                strhtml += `<a href="javascript:;"><li>
                         <img src="${value[`trade picture url`]}" alt="">
-                    <span>${value[`trade kind`]}</span><span>${value[`trade size`]}</span><br><span>${value[`trad name`]}</span><span>${value[`trade price`]}</span>
-                </li>
+                    <p>${value[`trade kind`]}</p><p>${value[`trade size`]}</p><br><p>${value[`trad name`]}</p>
+                    <span>￥${value[`trade price`]}</span>
+                </li></a>
               `;
             
             

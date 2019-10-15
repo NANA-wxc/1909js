@@ -9,7 +9,10 @@
         this.previndex = 0; //前一个索引
         this.index = 0; //当前索引
     }
-
+    let timer2=''
+    timer2=setInterval(function(){
+        $(".xnext").click();
+        }, 3000);
     Lunbox.prototype.init = function () {
         let _this = this;
         this.btns.on('click', function (ev) {
@@ -21,9 +24,13 @@
         this.banner.hover(function () {
             _this.prev.show();
             _this.next.show();
+            clearInterval(timer2)
         }, function () {
             _this.prev.hide();
             _this.next.hide();
+            timer2=setInterval(function(){
+                $(".xnext").click();
+                }, 3000);
         });
 
         this.next.on('click', function (ev) {

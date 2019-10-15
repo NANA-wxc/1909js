@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 header{width: 100%;
     height: 42px;
@@ -33,7 +34,35 @@ padding-left: 10px;
 border-right:1px solid gray;
 
 }
+/* 楼梯导航 */
+#loutinav{
+    width: 1280px;
+    height: 50px;
+    font:16px uniqlo_font,uniqlo_font2 !important;
+    background: white;
+    
+}
 
+#loutinav a img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#loutinav div{
+    width: 166px;
+}
+#loutinav ul{
+    width: 1070px;
+    margin-top:17px;
+    float: right;
+}
+/* #loutinav ul .avtive1{
+    background: white;
+    color: red;
+} */
+#loutinav ul li{
+    border-left: 1px solid black;
+}
 /* li{
 display: inline-block;
 padding-right: 10px;
@@ -66,7 +95,7 @@ float: right;
 } */
 
 .tabbox .boxlist {
-display: none;
+display: none; 
 width: 1280px;
 height: 340px;
 background: gray;
@@ -96,9 +125,18 @@ overflow: hidden;
 text-decoration: underline;
 background: #1890ff;
 }
+.active1{
+    color: red;
+    border-bottom: 2px solid red;
+
+}
 /* 具体列表 */
 #merch_list img{
     display: block;
+}
+/* 结尾前图 */
+#bf_footer{
+    width: 1280px;
 }
 /* 结尾 */
 .u-footer-weblist{
@@ -145,24 +183,44 @@ background: black;
 }
 #ac_add li{
     display: inline-block;
-    width: 232px;
+    width: 212px;
     height: 448px;
     text-decoration: none;
+    padding:0 10px;
+    margin:0 10px;
+    margin-top: 20px;
 }
 #ac_add li img{
     display: block;
     width: 212px;
     height: 222px;
 }
-#ac_add li span{
+#ac_add li p{
     display: block;
 }
-#ac_add li> span:nth-of-type(1) {
+#ac_add li> p:nth-of-type(1) {
     float: left;
+    height: 26px;
+    margin:5px 0;
+    font:12px uniqlo_font,uniqlo_font2 !important;
+}
+#ac_add li> p:nth-of-type(2) {
+    height: 26px;
+    float: right;
+    margin:5px 0;
+    font:12px uniqlo_font,uniqlo_font2 !important;
+}
+#ac_add li> p:nth-of-type(3) {
+    display: inline-block;
+    width: 212px;
+    height: 26px;
+    text-align: left;
+    font:12px uniqlo_font,uniqlo_font2 !important;
     
 }
-#ac_add li> span:nth-of-type(2) {
-    float: right;
-    
+#ac_add li span{
+    font-weight: 900;
+    color: red;
+
 }
 

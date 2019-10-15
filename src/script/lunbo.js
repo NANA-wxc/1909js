@@ -9,7 +9,10 @@
         this.previndex = 0; //前一个索引
         this.index = 0; //当前索引
     }
-
+    let timer1=''
+    timer1=setInterval(function(){
+        $(".next").click();
+        }, 4000);
     Lunbo.prototype.init = function () {
         let _this = this;
         this.btns.hover( function (ev) {
@@ -21,9 +24,13 @@
         this.banner.hover(function () {
             _this.prev.show();
             _this.next.show();
+            clearInterval(timer1)
         }, function () {
             _this.prev.hide();
             _this.next.hide();
+            timer1=setInterval(function(){
+                $(".next").click();
+                }, 4000);
         });
 
         this.next.on('click', function (ev) {
@@ -114,6 +121,7 @@
         this.tabswitch(ev);
         this.previndex = this.index; //将当前索引给前一个索引。
     }
-
+    // window.setInterval("Lunbo.prototype.leftclick()",3000)
+    
     new Lunbo().init();
 }();

@@ -30,8 +30,8 @@ class louti {
                 //每一个楼层的top值，固定的值。
                 let $loucengtop = _this.louceng.eq(index).offset().top + $(element).height() / 2;
                 if ($loucengtop > $top) {
-                    _this.loutili.removeClass('active');
-                    _this.loutili.eq(index).addClass('active');
+                    _this.loutili.removeClass('active1');
+                    _this.loutili.eq(index).addClass('active1');
                     return false;
                 }
             });
@@ -40,14 +40,14 @@ class louti {
 
         //2.点击左侧的楼梯，显示右侧对应的图层
         this.loutili.on('click', function () {
-            $(this).addClass('active').siblings('li').removeClass('active');
+            $(this).addClass('active1').siblings('li').removeClass('active1');
             //获取每一个楼层的top值
             let $loucengtop = _this.louceng.eq($(this).index()).offset().top;
             //document.documentElement.scrollTop=100
             $('html,body').animate({
-                scrollTop: $loucengtop
+                scrollTop: ($loucengtop-100)
             });
-        });
+        });  
 
         //3.回到顶部
         this.last.on('click', function () {
