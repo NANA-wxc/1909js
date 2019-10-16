@@ -5,7 +5,6 @@ class louti {
         this.louceng = $('#merch_list .louceng');
         this.last = $('.last');
     }
-
     init() {
         let _this = this;
 
@@ -23,7 +22,6 @@ class louti {
             } else {
                 _this.loutinav.hide();
             }
-
             //4.拖动滚轮，楼梯和楼层对应
             //利用楼层的top值进行判断。
             _this.louceng.each(function (index, element) {
@@ -37,7 +35,6 @@ class louti {
             });
 
         });
-
         //2.点击左侧的楼梯，显示右侧对应的图层
         this.loutili.on('click', function () {
             $(this).addClass('active1').siblings('li').removeClass('active1');
@@ -48,14 +45,12 @@ class louti {
                 scrollTop: ($loucengtop-100)
             });
         });  
-
         //3.回到顶部
         this.last.on('click', function () {
             $('html,body').animate({
                 scrollTop: 0
             });
         });
-
     }
 }
 new louti().init()

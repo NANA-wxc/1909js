@@ -12,7 +12,7 @@
 
 //require(['effect','lunbo','sum']);//调用三个模块
 
-require(['jqmod']);
+require(['lunbomod','lunboxmod','tab_changemod','topfloat1mod','loutimod','topfloat2mod','index_addmod']);
 
 
 

@@ -1,0 +1,223 @@
+#reg_commodity{
+    width: 1220px;
+    height: 700px;
+    padding: 20px 30px;
+    background: pink;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+
+/* 显示的图片 */
+
+
+/* 小图列表 */
+#ulist {
+	/* position: absolute;
+	left: -85px;
+	top: 0px; */
+	float: left;
+	/* width: 402px;
+    height: 56px; */
+    width: 82px;
+    height: 506px;
+	overflow: hidden;
+}
+
+
+
+#reg_list {
+	/* float: left; */
+    width: 82px;
+    height: 435px;
+	position: relative;
+}
+
+#ulist ul {
+	list-style: none;
+	/* float: left; */
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#ulist ul li {
+	/* float: left; */
+	width: 82px;
+	height: 82px;
+	padding-bottom: 5px;
+}
+
+#ulist ul li img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+}
+
+/* #right {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: #333;
+} */
+
+#reg_commodity_but_top {
+	/* position: absolute; */
+	display: block;
+	/* left: 0px; */
+	/* top: 0px; */
+	/* z-index: 5; */
+	width: 66px;
+	height: 20px;
+	margin-left: 7px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+
+	background: url(../img/but2.png) -74px -98px;
+}
+#reg_commodity_but_bottom {
+  /* position: absolute; */
+	display: block;
+	/* left: 0px; */
+	/* top: 0px; */
+	/* z-index: 5; */
+	width: 66px;
+	height: 20px;
+	margin-left: 7px;
+	/* margin-bottom: 5px; */
+	border: 1px solid #ccc;
+
+	background: url(../img/but2.png) -3px -98px;
+}
+/* 商品图 */
+#reg_photo{
+width: 600px;
+height: 500px;
+float: left;
+position: relative;
+}
+#reg_photo .photo_left{
+	width: 50px;
+	height: 500px;
+	float: left;
+}
+#reg_photo .photo_right{
+	width: 50px;
+	height: 500px;
+	float: left;
+}
+#reg_photo .photo_sm{
+width: 500px;
+height: 500px;
+background: red;
+float: left;
+z-index: 2;
+
+}
+
+
+#reg_photo .photo_sm img{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	z-index: 2;
+	display: block;
+}
+#reg_photo .photo_sm_xk{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background: white;
+	z-index: 10;
+}
+
+/* #reg_photo .photo_sm img{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	z-index: 2;
+} */
+#reg_photo .photo_bg{
+	position: absolute;
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
+	background: red;
+	left: 600px;
+	top:0px;
+	float: left;
+	}
+	#reg_photo .photo_bg img{
+		position: absolute;
+		width: 1000px;
+		height: 1000px;
+	}
+#reg_commodity_but_left {
+	position: absolute;
+	display: block;
+	
+	margin-top: 222px;
+	margin-left:28px;
+	/* z-index: 5; */
+	width: 20px;
+	height: 66px;
+	border: 1px solid #ccc;
+	background: url(../img/but.png) -98px -2px;
+}
+#reg_commodity_but_right {
+	
+	display: block;
+	margin-top: 222px;
+	/* z-index: 5; */
+	width: 20px;
+	height: 66px;	
+	border: 1px solid #ccc;
+	background: url(../img/but.png) -98px -73px;
+}
+/* 文字渲染部分 */
+#commodity_p{
+	width: 400px;
+	height: 400px;
+	float: left;
+	
+}
+#commodity_number{
+	width: 540px;
+	height: 200px;
+	float: right;
+	position: relative;
+	
+}
+#commodity_count{
+	width: 100px;
+	height: 50px;
+	float: left;
+}
+#commodity_number a{
+	width: 100px;
+	height: 50px;
+	background: red;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	
+}
+#commodity_number button{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
